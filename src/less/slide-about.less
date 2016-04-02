@@ -1,0 +1,129 @@
+// main: style.less
+
+/* Slide: About */
+
+/* === About === */
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #universe #about {
+	  background: url(img/linen@2x.jpg) #333 repeat;
+  }
+}
+
+#universe #about {
+  background: url(img/linen@2x.jpg) #333 repeat;
+  
+  .namecard {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    overflow: visible;
+    z-index: 11;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    
+    .view-resume-small {
+      display: none;
+      bottom: 30px;
+      height: 40px;
+      left: 100px;
+      line-height: 38px;
+    }
+    .view-resume {
+      display: block;
+      bottom: 30px;
+      height: 40px;
+      left: 100px;
+      line-height: 38px;
+      
+      &:hover {
+	      color: rgba(255,255,255, 1);
+	      border-color: rgba(255,255,255,0.6);
+	      background-color: rgba(0,0,0,0.3);
+	    }
+
+    }
+    .view-resume,
+    .view-resume-small {
+      position: absolute;
+      width: 100px;
+      background-color: rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      font-size: 0.8125em;
+      -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+      z-index: 12;
+    }
+	}
+  .namecard::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    background: url(img/avatar.jpg) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    overflow: hidden;
+    z-index: 12;
+    border-radius: 100%;
+  }
+  .namecard-name {
+    color: rgba(255,255,255,0.9);
+    font-weight: 700;
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 65px;
+    font-family: 'adobe-garamond-pro', sans-serif;
+  }
+  .namecard-title {
+    font-size: 0.875em;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    p {
+      margin-top: 10px;
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+    }
+  }
+  .namecard-social {
+    margin-top: 20px;
+    font-size: 1.25em;
+    text-align: center;
+    a {
+      display: inline-block;
+      color: rgba(255,255,255,0.9);
+      margin: 0 3px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .twitter {
+      color: #55acee;
+    }
+    .googleplus {
+      color: #dd4b39;
+    }
+    .sina-weibo {
+      color: #f4b547;
+    }
+    .github {
+      color: #4183c4;
+    }
+  }
+}
+
+

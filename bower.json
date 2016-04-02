@@ -1,0 +1,39 @@
+{
+  "name": "rakugaki",
+  "description": "Design portfolio.",
+  "main": "index.js",
+  "authors": [
+    "Art Chen"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/artchen/Rakugaki-2",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-sanitize": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.2",
+    "bower": "*",
+    "install": "^1.0.4",
+    "perfect-scrollbar": "^0.6.10",
+    "angular-touch": "^1.5.3"
+  }
+}

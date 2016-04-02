@@ -1,0 +1,33 @@
+<div class="info-trigger show-info" ng-class="{show: loaded}">
+  <a ng-click="openInfoWindow()" ng-bind="slides[currentSlide].name"></a>
+</div>
+
+<!-- Site Nav Trigger -->
+<div class="site-nav" id="st-trigger-effects">
+  <div class="nav-trigger trigger" data-effect="st-effect-2" 
+	  ng-click="openSidebar($event)">
+    <span class="icon-menu7"></span>
+  </div>
+</div>
+
+<!-- Slide Nav -->
+<div class="slide-nav cf">
+  <button class="prev-button nav trigger" ng-click="prevSlide()">
+    <span class="icon-arrow-left4"></span>
+  </button>
+  <div class="select-button trigger" data-slide="index" ng-click="openSlideIndex($event)">
+    <span class="icon-grid4"></span>
+  </div>
+  <button class="next-button nav trigger" ng-click="nextSlide()">
+    <span class="icon-arrow-right4"></span>
+  </button>
+</div>
+
+<div class="slide-index">
+  <ul>
+    <li ng-repeat="s in slides track by $index"
+    	ng-class="{'list-end': ($index == (slides.length - 1)) }">
+    	<a ng-click="gotoSlide(s.state, $event)">{{s.name}}</a>
+    </li>
+  </ul>
+</div>

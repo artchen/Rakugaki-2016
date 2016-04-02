@@ -1,0 +1,32 @@
+<div class="md-modal md-effect-12" id="modal-{{modal.slug}}">
+  <div class="md-content">
+    <button class="md-close" ng-click="closeModal()">
+      <span class="icon-close"></span>
+    </button>
+    <div class="md-wrapper">
+      <div class="md-theme-info">
+        <h3>{{modal.name}}</h3>
+        <div class="md-get-theme cf">
+	        
+          <a href="{{modal.wp}}" 
+	          ng-show="modal.wp"
+	          class="get-wordpress-theme available">Wordpress</a>
+	          
+	        <a href="{{modal.ghost}}" 
+	          ng-show="modal.ghost"
+	          class="get-ghost-theme available">Ghost</a>
+	          
+        </div>
+      </div>
+
+      <div class="md-iframe">
+        <div class="browser-dot dot-red"></div>
+        <div class="browser-dot dot-yellow"></div>
+        <div class="browser-dot dot-green"></div>
+        <iframe ng-src="{{iframeSource}}" id="iframe-{{modal.slug}}" scrolling="no">
+          <div class="iframe-holder"></div>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>

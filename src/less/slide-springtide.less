@@ -1,0 +1,64 @@
+// main: style.less
+
+/* Slide: Springtide */
+
+#springtide {
+  background: #47464f;
+  .springtide-logo {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -125px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    
+    #springtide-logo {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: url("img/springtide_logo_gold.svg") center no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+  .desc {
+    position: absolute;
+    display: block;
+    list-style: none;
+    font-size: 1.25em;
+    font-family: 'adobe-garamond-pro', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #816b33;
+    letter-spacing: 1px;
+    width: 250px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 100%;
+    span {
+      color: #dbae3a;
+    }
+  }
+  .desc_1 {
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    margin-bottom: 45px;
+  }
+  .desc_2 {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="rakugaki">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title page-title></title>
+	<link rel="icon" type="image/ico" href="./favicon.ico" />
+	
+	<!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/onh5nft.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <!-- icomoon -->
+  <link rel="stylesheet" type="text/css" href="icomoon/style.css" />
+  
+	<!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+</head>
+
+<body ng-controller="MainController" 
+	ng-click="closePopup($event)"
+	ng-swipe-left="nextSlide()",
+	ng-swipe-right="prevSlide()"
+	ng-keydown="onKeydown($event)">
+		
+	<style id="hidden-style"></style>
+	
+	<div id="universe">
+		
+		<div class="plot"></div>
+		
+		<div id="st-container" class="st-container" ng-class="{'st-menu-open': sidebarShown}">
+			
+			<nav class="st-menu st-effect-2" ng-click="prenventPropagation($event)">
+        <ng-include src="'views/partials/sidebar.html'"></ng-include>
+      </nav>
+      
+      <div class="st-pusher" ng-click="closeSidebar($event)">
+        <div class="st-content">
+					
+					<ng-include src="'views/partials/nav.html'"></ng-include>
+					
+					<ng-include src="'views/panels/panel-welcome.html'"></ng-include>
+					<ng-include src="'views/panels/panel-springtide.html'"></ng-include>
+					<ng-include src="'views/panels/panel-shiro.html'"></ng-include>
+					<ng-include src="'views/panels/panel-kcalb.html'"></ng-include>
+					<ng-include src="'views/panels/panel-yabu.html'"></ng-include>
+					<ng-include src="'views/panels/panel-about.html'"></ng-include>
+					
+					<div class="viewport" ng-class="transitionAnimation" ui-view>
+						
+					</div>
+
+        </div> <!-- / .st-content -->
+      </div> <!-- / .st-pusher -->
+		</div> <!-- / .st-container -->
+		
+	</div> <!-- / #universe -->
+	
+	
+	<script src="/js/ang.js"></script>
+	<script src="/js/jq.js"></script>
+	<script src="/js/app.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,173 @@
+// main: style.less
+
+/* === Side Menu === */
+
+.st-menu ul.side-menu {
+  display: block;
+    
+  li {
+    display: block;
+    position: relative;
+    height: 40px;
+    margin: 0px 20px;
+        
+    a {
+      display: block;
+      color: rgba(255,255,255,0.8);
+      
+      &:hover {
+				color: rgba(255,255,255,1);
+      }
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 40px;
+    }
+    .menu-icon {
+      font-size: 1em;
+    }
+    .menu-text {
+      font-size: 0.8125em;
+      margin-left: 10px;
+      font-weight: 700;
+    }
+    
+    &.menu-site {
+      padding-left: 20px;
+    }
+    &.menu-avatar {
+	    margin: 0px 20px 0px 18px;
+	    
+	    .menu-text {
+	      margin-left: 8px;
+	    }
+	    .menu-avatar-pic {
+		    width: 24px;
+		    height: 24px;
+		    background: url(img/avatar.jpg) no-repeat;
+		    border-radius: 100%;
+		    background-size: 100%;
+		  }
+	  }
+  }
+  
+  .lang-label {
+    position: absolute;
+    display: block;
+    line-height: 43px;
+    vertical-align: middle;
+    height: 40px;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: rgba(255,255,255,0.3);
+    right: 0;
+    top: 0;
+  }
+}
+
+/* Sidebar Effects */
+
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+}
+
+.st-content {
+	overflow: hidden;
+	background: transparent;
+}
+
+.st-content {
+	position: relative;
+}
+
+.st-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.st-pusher {
+	position: relative;
+	left: 0;
+	z-index: 99;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	visibility: hidden;
+	padding: 10px 0px;
+	width: 280px;
+	height: 100%;
+	/*background: #191919;*/
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+  overflow: hidden;
+}
+
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* Effect: Reveal */
+
+.st-container.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(280px, 0, 0);
+	transform: translate3d(280px, 0, 0);
+}
+
+.st-container.st-menu {
+	z-index: 1;
+}
+
+.st-container.st-menu-open .st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.st-container .st-menu::after {
+	display: none;
+}

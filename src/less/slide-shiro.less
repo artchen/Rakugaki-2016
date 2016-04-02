@@ -1,0 +1,57 @@
+// main: style.less
+
+/* Slide: Shiro */
+
+#shiro {
+  .logo {
+    background-color: rgba(255,255,255,0.3);
+  }
+  #shiro-logo {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -140px;
+    background: url(img/shirologo.png) transparent top no-repeat;
+    border: 2px solid rgba(0,0,0,0.75);
+    text-indent: -9999px;
+    z-index: 10;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  #shiro-coming {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0.875em;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 110px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #shiro #shiro-logo {
+    background-image: url(img/shirologo@2x.png);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+}
+
+/* info: shiro */
+#info-shiro {
+  .works-info-content-wrapper,
+  .close-info-window {
+    background: rgba(0,0,0,0.8);
+  }
+  .close-info-window:hover {
+    background: rgba(0,0,0,1);
+  }
+}

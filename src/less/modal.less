@@ -1,0 +1,206 @@
+// main: style.less
+
+/* === MD Popup Modal === */
+
+.modal-include-wrapper {
+	position: relative;
+	height: 100%;
+}
+.slide-wrapper-showdetail .md-modal {
+  opacity: 1;
+}
+.md-modal {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  z-index: 99;
+  display: block;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.md-show {
+  visibility: visible;
+}
+
+/* Effect styles */
+
+.md-content {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* === Modal Content Style === */
+
+.md-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background: #f4f4f4;
+  
+  .md-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 28px;
+    vertical-align: middle;
+    color: rgba(255,255,255,0.7);
+    background: transparent;
+    border-radius: 50%;
+    outline: none;
+    z-index: 100;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+		
+		&:hover {
+    	color: rgba(255,255,255,1);
+    }
+  }
+  iframe {
+	  display: block;
+	  position: relative;
+	  height: 100%;
+	  width: 100%;
+	  overflow: hidden;
+	  background: #404040;
+	  z-index: 2;
+	}
+}
+.md-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 60px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.md-theme-info {
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  margin: 30px 0 60px;
+  
+	h3 {
+	  font-size: 1.5em;
+	  color: rgba(255,255,255,0.9);
+	  text-align: center;
+	  font-weight: 300;
+	  margin-bottom: 20px;
+	  text-transform: uppercase;
+	}
+	
+  .md-get-theme {
+	  position: relative;
+    margin: 0 auto;
+    text-align: center;
+    
+    a {
+      display: inline-block;
+      position: relative;
+      font-weight: 400;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      height: 34px;
+      line-height: 34px;
+      width: 120px;
+      margin: 0 10px;
+      padding: 0;
+      border-radius: 3px;
+      background: #d05a5b;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+			
+			&:hover {
+	      background: #bf4647;
+	    }
+			&.get-ghost-theme {
+      	background-color: #9fbb58;
+				
+				&:hover {
+      		background-color: #7a9042;
+				}
+    	}
+			&.get-wordpress-theme {
+      	background-color: #237da5;
+    	
+				&:hover {
+      		background-color: #1c6282;
+    		}
+    	}
+    }
+  }
+}
+.md-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  overflow: visible;
+  
+  &::before {
+	  position: absolute;
+	  content: "";
+	  width: 100%;
+	  height: 30px;
+	  top: -25px;
+	  left: 0;
+	  background: #383838;
+	  border-radius: 5px;
+	  z-index: 1;
+  }
+  &::after {
+	  position: absolute;
+	  content: "";
+	  width: 100%;
+	  height: 30px;
+	  bottom: -25px;
+	  left: 0;
+	  background: #383838;
+	  border-radius: 5px;
+	  z-index: 1;
+  }
+  .browser-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: -15px;
+    z-index: 100;
+    display: block;
+  }
+  .dot-red {
+    background: #f74e49;
+    left: 15px;
+  }
+  .dot-yellow {
+    background: #fad074;
+    left: 25px;
+  }
+  .dot-green {
+    background: #a1d97f;
+    left: 35px;
+  }
+}
+
+.iframe-holder {
+  background: #222;
+  height: 100%;
+  width: 100%;
+}

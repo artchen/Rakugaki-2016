@@ -1,0 +1,246 @@
+// main: style.less
+
+/* === Responsive === */
+
+@media only screen and (max-width: 1100px) {
+  #modal-resume .resume-wrapper {
+    width: 100%;
+    min-width: 820px;
+  }
+}
+@media only screen and (max-width: 940px) {
+	/*
+  #about .namecard .view-resume-small {
+    display: block;
+  }
+  #about .namecard .view-resume {
+    display: none;
+  }
+  */
+}
+@media only screen and (max-height: 400px) {
+  #welcome #site-logo {
+    width: 48px;
+    height: 160px;
+    margin-top: -80px;
+    margin-left: -24px;
+  }
+  #yabu-no-naka #yabu-logo {
+    width: 50px;
+    height: 150px;
+    margin-top: -120px;
+    margin-left: -25px;
+  }
+  #yabu-no-naka .bamboo {
+    width: 200px;
+    height: 100px;
+    margin-left: -100px;
+  }
+  #kcalb #kcalb-logo {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  .site-nav {
+    width: 36px;
+    height: 36px;
+  }
+  .slide-nav {
+    width: auto;
+    height: 36px;
+  }
+  .works-info {
+    top: 47px;
+    width: 100%;
+    padding-left: 11px;
+  }
+  .works-info-wrapper {
+    .works-info-content-wrapper {
+      max-height: 200px;
+    }
+    .works-info-content-wrapper,
+    .close-info-window {
+      background: rgba(0,0,0,0.5);
+    }
+    .close-info-window:hover {
+      background: rgba(0,0,0,0.7);
+    }
+  }
+  .info-trigger {
+    right: 130px;
+  }
+  .info-trigger a {
+    height: 36px;
+    line-height: 36px;
+  }
+  .nav-trigger span {
+    line-height: 36px;
+    font-size: 0.875em;
+  }
+  .slide-nav .trigger {
+    width: 36px;
+  }
+  .slide-nav .trigger span,
+  .slide-nav .trigger.nav span {
+    line-height: 36px;
+    font-size: 0.875em;
+  }
+  .slide-nav .trigger.nav span {
+	  font-size: 1em;
+  }
+  .slide-index {
+    display: none;
+    position: fixed;
+    right: 11px;
+    top: 47px;
+    background: #2b2b2b;
+    z-index: 999;
+    width: 108px;
+    height: 180px;
+    ul {
+      display: block;
+      overflow: hidden;
+      li {
+        height: 36px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  #yabu-no-naka .bamboo {
+    width: 200px;
+    height: 100px;
+    margin-left: -100px;
+  }
+  #kcalb #kcalb-logo {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  .md-wrapper {
+    padding: 0;
+  }
+  .md-iframe {
+    width: 100%;
+  }
+  .md-iframe::before {
+    border-radius: 0;
+  }
+  .md-content .md-close {
+    right: 10px;
+    top: 10px;
+  }
+  .md-theme-info {
+
+  }
+  .site-nav {
+    width: 36px;
+    height: 36px;
+  }
+  .slide-nav {
+    width: auto;
+    height: 36px;
+  }
+  .info-trigger {
+    right: 130px;
+  }
+  .info-trigger a {
+    height: 36px;
+    line-height: 36px;
+  }
+  .nav-trigger span {
+    line-height: 36px;
+    font-size: 0.875em;
+  }
+  .slide-nav .trigger {
+    width: 36px;
+  }
+  .slide-nav .trigger span,
+  .slide-nav .trigger.nav span {
+    line-height: 36px;
+    font-size: 0.875em;
+  }
+  .slide-nav .trigger.nav span {
+		font-size: 1em;
+  }
+  .works-info {
+    top: 47px;
+    width: 100%;
+    padding-left: 11px;
+  }
+  .works-info-wrapper {
+    .works-info-content-wrapper,
+    .close-info-window {
+      background: rgba(0,0,0,0.5);
+    }
+    .close-info-window:hover {
+      background: rgba(0,0,0,0.7);
+    }
+  }
+  #about .namecard {
+    width: 250px;
+    height: 250px;
+    margin-left: -125px;
+    margin-top: -105px;
+  }
+  #about .namecard::before {
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+  }
+  #about .namecard .namecard-name {
+    font-size: 1.25em;
+  }
+  #about .namecard .namecard-title {
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+  }
+  #about .namecard .namecard-title p {
+    margin-top: 10px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 300;
+  }
+  #about .namecard .namecard-social {
+    margin-top: 15px;
+    font-size: 1.125em;
+  }
+  
+  #about .namecard .view-resume {
+    display: block;
+    bottom: 25px;
+    height: 30px;
+    line-height: 28px;
+    left: 75px;
+  }
+  .slide-index {
+    display: none;
+    position: fixed;
+    right: 11px;
+    top: 47px;
+    background: #2b2b2b;
+    z-index: 999;
+    width: 108px;
+    height: 180px;
+    ul {
+      display: block;
+      overflow: hidden;
+      li {
+        height: 36px;
+        line-height: 36px;
+      }
+    }
+  }
+  #springtide .desc_1 p:first-child {
+    display: none;
+  }
+  #springtide .desc_2 p:last-child {
+    display: none;
+  }
+}

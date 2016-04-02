@@ -1,0 +1,95 @@
+// main: style.less
+
+/* Perfect Scrollbar */
+
+.ps-container {
+	
+	&:hover,
+	&.hover {
+		.ps-scrollbar-x-rail,
+		.ps-scrollbar-y-rail {
+			opacity: 0.6;
+		}
+	}
+	&.ie6 {
+		.ps-scrollbar-x,
+		.ps-scrollbar-y {
+	    font-size: 0;
+		}
+	}
+	&.ie {
+		.ps-scrollbar-x,
+		.ps-scrollbar-y {
+	    visibility: hidden;
+		}
+		
+		&:hover
+		&.hover {
+			.ps-scrollbar-x,
+			.ps-scrollbar-y {
+				visibility: visible;
+			}
+		}
+	}
+	
+	.ps-scrollbar-x-rail {
+    position: absolute;
+    bottom: 0px;
+    height: 8px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: background-color .2s linear, opacity .2s linear;
+    
+    &.hover, &:hover {
+	    background-color: #eee;
+			opacity: 0.9;
+			
+			.ps-scrollbar-x {
+				background-color: #D0665D;
+			}
+    }
+    &.in-scrolling {
+	    background-color: #eee;
+			opacity: 0.9;
+    }
+	}
+	.ps-scrollbar-y-rail {
+    position: absolute; 
+    right: 1px; 
+    width: 8px;
+    border-radius: 0px;
+    opacity: 0;
+    transition: background-color .2s linear, opacity .2s linear;
+    
+    &.hover, &:hover {
+	    background-color: transparent;
+			opacity: 0.9;
+			
+			.ps-scrollbar-y {
+				background-color: #D0665D;
+			}
+    }
+    &.in-scrolling {
+	    background-color: transparent;
+	    opacity: 0.9;
+		}
+	}
+	
+	.ps-scrollbar-x {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #D0665D;
+    border-radius: 0px;
+    transition: background-color .2s linear;
+	}
+	
+	.ps-scrollbar-y {
+    position: absolute;
+    right: 0;
+    width: 2px;
+    background-color: #D0665D;
+    border-radius: 0px;
+    transition: background-color .2s linear;
+	}
+} 

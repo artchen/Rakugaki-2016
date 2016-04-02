@@ -1,0 +1,43 @@
+// main: style.less
+
+/* Slide: Kcalb */
+
+#kcalb {
+  background: #414141 repeat;
+  
+  #kcalb-logo {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -125px;
+    background: url(img/kcalb-logo.png) transparent top no-repeat;
+    text-indent: -9999px;
+    z-index: 11;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #kcalb #kcalb-logo {
+    background-image: url(img/kcalb-logo@2x.png);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+}
+
+/* Kcalb Modal */
+
+#modal-kcalb .md-content{
+  background:url(img/carbon_fibre_v2.png) repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #modal-kcalb .md-content {
+    background-image:url(img/carbon_fibre_v2_@2X.png);
+    -webkit-background-size: 32px 36px;
+    background-size: 32px 36px;
+  }
+}

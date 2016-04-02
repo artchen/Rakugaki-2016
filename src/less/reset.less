@@ -1,0 +1,80 @@
+// main: style.less
+
+/* Reset */
+
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: @base-font-family;
+  font-size: 1em;
+  font-size: 100%;
+  color: #333;
+  background: #191919;
+  overflow-x: hidden;
+  cursor: pointer;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.clear {
+  clear: both;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+	zoom: 1;
+}
+.none {
+  display: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hidden {
+	display: none;
+}
+
+.plot {
+  position: absolute;
+  background: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  top: -50px;
+  left: -50px;
+  z-index: 9999;
+}
+

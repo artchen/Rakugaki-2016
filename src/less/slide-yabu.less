@@ -1,0 +1,100 @@
+// main: style.less
+
+/* Slide: Yabu no Naka */
+
+#yabu-no-naka {
+  background: url(img/texture.png) #4d755f repeat;
+  
+  .bamboo {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -155px;
+    width: 300px;
+    height: 150px;
+    z-index: 10;
+    .trigger {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: url(img/bamboo.svg) transparent center no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+  #yabu-logo {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -120px;
+    background: url(img/yabu-logo.png) transparent top no-repeat;
+    text-indent: -9999px;
+    z-index: 10;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #yabu-no-naka {
+    -webkit-background-size: 64px 64px;
+    background-size: 64px 64px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #yabu-no-naka #yabu-logo {
+    background-image: url(img/yabu-logo@2x.png);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+}
+
+/* info: yabu */
+
+#info-yabu {
+  .works-info-content-wrapper,
+  .close-info-window {
+    background: rgba(0,0,0,0.6);
+  }
+		
+	.close-info-window:hover {
+    	background: rgba(0,0,0,0.8);
+  }
+}
+
+/* Yabu Modal */
+
+#modal-yabu {
+  .md-content {
+    background:url(img/texture.png) #B5CAA0 repeat;
+  }
+  .md-theme-info h3 {
+    color: #4D5139;
+  }
+  .md-close {
+    color: #89916B;
+  }
+  .md-close:hover {
+    color:#5B622E;
+  }
+} 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #modal-yabu .md-content {
+    -webkit-background-size: 64px 64px;
+    background-size: 64px 64px;
+  }
+}

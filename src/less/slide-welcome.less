@@ -1,0 +1,30 @@
+// main: style.less
+
+/* Slide: Welcome */
+
+#universe #welcome {
+  background: url(img/linen@2x.jpg) #333 repeat;
+  overflow: hidden !important;
+}
+#welcome #site-logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 200px;
+  margin-left: -30px;
+  margin-top: -100px;
+  background: url(img/logo.png) transparent center no-repeat;
+  text-indent: -9999px;
+  z-index: 10;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #welcome #site-logo {
+    background-image: url(img/logo@2x.png);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+}
