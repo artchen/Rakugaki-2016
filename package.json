@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artchen/Rakugaki-2.git"
+    "url": "git+https://github.com/artchen/Rakugaki-2016.git"
   },
   "keywords": [
     "portfolio"
@@ -16,9 +16,9 @@
   "author": "Art Chen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/artchen/Rakugaki-2/issues"
+    "url": "https://github.com/artchen/Rakugaki-2016/issues"
   },
-  "homepage": "https://github.com/artchen/Rakugaki-2#readme",
+  "homepage": "https://github.com/artchen/Rakugaki-2016#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-bower": "0.0.13",
