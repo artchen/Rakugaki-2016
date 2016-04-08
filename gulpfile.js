@@ -92,11 +92,11 @@ gulp.task('less', function () {
 /* concat and compress app scripts */
 gulp.task('js', function () {
   gulp.src(path.JS)
-  	.pipe(sourcemaps.init())
+  	//.pipe(sourcemaps.init())
 			.pipe(concat('app.js'))
 			.pipe(ngAnnotate())
 			.pipe(uglify())
-		.pipe(sourcemaps.write())
+		//.pipe(sourcemaps.write())
     .pipe(gulp.dest(path.DIST + '/js'));
 });
 
