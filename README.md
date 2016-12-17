@@ -1,6 +1,4 @@
-# Rakugaki 2016
-
-## Introduction
+# Rakugaki 3
 
 This project is version 3 of my design portfolio - [Rakugaki](https://rakugaki.me).
 
